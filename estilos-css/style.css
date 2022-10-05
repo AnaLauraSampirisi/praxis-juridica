@@ -1,15 +1,10 @@
 
 *{
-    box-sizing: border-box;
     margin: 0;
-    margin-bottom: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.container {
-    max-width: 1400px;
-    margin:auto;
-    justify-content: center;
-}
+
 html {
     scroll-behavior: smooth;
 }
@@ -54,9 +49,7 @@ header nav ul li a {
 header nav ul li a:hover{
     color: blue;
 }
-.logo {
-    display:flex;
-}
+
 
 /*FOOTER*/
 footer {
@@ -73,7 +66,6 @@ footer div p{
 }
 #redes {
     align-items: center;
-    justify-content:center;
     display: flex;
     padding-right: 80px;
     padding-top: 23px;
@@ -301,9 +293,8 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.fondoColaboradores {
+#fondoColaboradores {
     background-color: whitesmoke;
-    padding-bottom: 10em;
 }
 main section div p {
     font-family: 'Manrope', sans-serif;
@@ -311,30 +302,27 @@ main section div p {
     color:#272827;
 }
 
-.fondoColaboradores {
-    background-color: whitesmoke;
-}
-.imagenes:first-child{
+#imagenesFirst{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     
 }
-.imagenes:first-child img{
+#imagenesFirst img{
     text-align: center;
     margin:3.5em;
     margin-bottom: 20px;
     margin-top: 10em;
 }
 
-.imagenes:last-child{
+#imagenesSecond{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.imagenes:last-child img{
+#imagenesSecond img{
     text-align: center;
     margin:3.5em;
     margin-top: 10em;
@@ -462,6 +450,29 @@ INDEX GRID*/
     header {
         overflow:hidden;
     }
+    /*quienes somos*/
+    #quienesSomos {
+        height: 15em;
+    }
+    
+    #flexConteiner {
+        display: block;
+    }
+    .presentacionFirst {
+       padding-left: 1em;
+       padding-right: 1em;
+       padding-top: 2em;
+       text-align: center;
+    }
+    .presentacionSecond {
+    padding-top: 2em;
+    padding-left: 1em;
+    text-align: center;
+    padding-right: 1em;
+    }
+    section div img {
+        height: 250px;
+    }
 }
 
 /*MEDIA QUERIES TABLET*/
@@ -499,10 +510,32 @@ INDEX GRID*/
         background-size: cover;
         background-attachment: fixed; 
     }
+    /*quienes somos*/
+    #quienesSomos {
+        height: 30em;
+    }
+    
+    #flexConteiner {
+        display: block;
+    }
+    .presentacionFirst {
+       padding-left: 4em;
+       padding-right: 1em;
+       padding-top: 10em;
+       text-align: center;
+    }
+    .presentacionSecond {
+    padding-top: 5em;
+    padding-left: 4em;
+    text-align: center;
+    padding-right: 1em;
+    }
+    
 }
 
 /*MEDIA QUERIES DESKTOP*/
 @media (min-width: 1024px) {
+    /*index*/
     .containerGrid {
         grid-template-columns: repeat(2,2fr) 1fr;
         grid-template-rows: 3em 35em 40em 20em 3em;
@@ -514,7 +547,7 @@ INDEX GRID*/
             "contenido contenido publicidad"
             "footer footer footer";
     }
-   
+    /*contacto*/
     .Contacto {
         background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5,7,12,0.75)),
         url("../assets/imagenes/contacto.jpg");
@@ -522,4 +555,6 @@ INDEX GRID*/
         background-size: cover;
         background-attachment: fixed; 
     }
+    /*quienes somos*/
+
 }
