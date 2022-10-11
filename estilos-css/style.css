@@ -28,28 +28,22 @@ header {
     height: 55px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     position: sticky;
     top: 0px;
-}
-.alinHeader {
-    align-content: space-between;
 }
 header nav ul li {
     margin: 15px;
     list-style-type: none;
-    display: inline;
 }
-header nav ul li a {
+.nav-link {
     text-decoration: none;
     color: white;
     font-family: 'Manrope', sans-serif;
     font-size: larger;
 }
-header nav ul li a:hover{
+.nav-link:hover{
     color: blue;
 }
-
 
 /*FOOTER*/
 footer {
@@ -167,7 +161,6 @@ aside p{
     background-color: whitesmoke;
     padding-bottom: 15em;
 }
-
 #quienesSomos {
     background-image: linear-gradient(rgba(5,7,12,0.6), rgba(5,7,12,0.6)),
     url("../assets/imagenes/quienes-somos.jpg");
@@ -390,10 +383,10 @@ INDEX GRID*/
     display: grid;
 }
 
-#headerGrid {
+.headerGrid {
     grid-area: menu;
 }
-#mainGrid {
+.mainGrid {
     grid-area: contenido;
 }
 .heroGrid {
@@ -405,21 +398,50 @@ INDEX GRID*/
 .footerGrid {
     grid-area: footer;
 }
+/*QUIENES SOMOS*/
+.containerGrid {
+    display: grid;
+}
+.navGrid {
+    grid-area: nav;
+}
+#contenidoGrid {
+    grid-area: main;
+}
+.imgGrid {
+    grid-area: imagen;
+}
+.pieGrid {
+    grid-area: pie;
+}
 
 /*MEDIA QUERIES MOBILE*/
 @media (max-width: 767px){
+    /*header*/
+    header {
+        height: 55px;
+        display: flex;
+    }
+    .alinHeader {
+        align-content: space-between;
+    }
+    header nav ul li {
+        margin: 15px;
+        display: inline;
+    }
+  
     /*index*/
     .containerGrid {
         background-color:rgb(0, 0, 0,1);
         grid-template-columns: 1fr;
         grid-template-rows: 1em 30em 25em 40em 10em 1em;
         grid-template-areas: 
-            "menu"
-            "hero"
-            "contenido"
-            "contenido"
-            "publicidad"
-            "footer";
+        "menu"
+        "hero"
+        "contenido"
+        "contenido"
+        "publicidad"
+        "footer";
     }
     .video {
         margin-top: 5em;
@@ -447,14 +469,11 @@ INDEX GRID*/
         background-color: #C7CCC7;
         height: 170px;
     }
-    header {
-        overflow:hidden;
-    }
+    
     /*quienes somos*/
     #quienesSomos {
         height: 15em;
     }
-    
     #flexConteiner {
         display: block;
     }
@@ -465,10 +484,10 @@ INDEX GRID*/
        text-align: center;
     }
     .presentacionSecond {
-    padding-top: 2em;
-    padding-left: 1em;
-    text-align: center;
-    padding-right: 1em;
+        padding-top: 2em;
+        padding-left: 1em;
+        text-align: center;
+        padding-right: 1em;
     }
     section div img {
         height: 250px;
@@ -476,7 +495,7 @@ INDEX GRID*/
 }
 
 /*MEDIA QUERIES TABLET*/
-@media (min-width: 768px) and (max-width:1023px){
+@media (min-width: 768px) and (max-width:1119px){
     /*INDEX*/
     .containerGrid {
         background-color:rgb(0, 0, 0,1);
@@ -514,27 +533,25 @@ INDEX GRID*/
     #quienesSomos {
         height: 30em;
     }
-    
-    #flexConteiner {
-        display: block;
-    }
     .presentacionFirst {
-       padding-left: 4em;
+       padding-left: 1em;
        padding-right: 1em;
-       padding-top: 10em;
+       padding-top: 5em;
        text-align: center;
     }
     .presentacionSecond {
-    padding-top: 5em;
-    padding-left: 4em;
-    text-align: center;
-    padding-right: 1em;
+        padding-top: 5em;
+        padding-left: 1em;
+        text-align: center;
+        padding-right: 1em;
     }
-    
+    section div img {
+        height: 250px;
+    }
 }
 
 /*MEDIA QUERIES DESKTOP*/
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     /*index*/
     .containerGrid {
         grid-template-columns: repeat(2,2fr) 1fr;
@@ -547,14 +564,3 @@ INDEX GRID*/
             "contenido contenido publicidad"
             "footer footer footer";
     }
-    /*contacto*/
-    .Contacto {
-        background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5,7,12,0.75)),
-        url("../assets/imagenes/contacto.jpg");
-        height: 100%;
-        background-size: cover;
-        background-attachment: fixed; 
-    }
-    /*quienes somos*/
-
-}
