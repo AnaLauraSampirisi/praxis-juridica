@@ -1,0 +1,46 @@
+.Contacto {
+    background-image: linear-gradient(rgba(5,7,12,0.5), rgba(5,7,12,0.5)),
+    url("../assets/imagenes/contacto.jpg");
+    height: 200vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.letraContacto {
+    padding-top: 1em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 10% auto;
+    input{
+        height: 30px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border-color: #051B48;
+        border-style: solid;
+        background-color:  rgb(3, 0, 7);
+        }
+    label{
+        font-family: $fuente-principal;
+        color: whitesmoke;
+        font-style: normal;
+        font-size: larger;
+        text-align: center;
+        }
+}
+textarea {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-color: #051B48;
+    background-color:  rgb(3, 0, 7);
+    border-width: 2px;
+    color: whitesmoke;
+}
+#fraseFinal {
+    font-family: $fuente-principal;
+    color: whitesmoke;
+    font-weight: lighter;
+    text-align: center;
+    font-size: xx-large;
+}

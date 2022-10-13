@@ -1,0 +1,73 @@
+/*MEDIA QUERIES TABLET*/
+@media (min-width: 768px) and (max-width:1119px){
+    /*INDEX*/
+        .containerGrid {
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 3em 26em 26em 35em 5em;
+            grid-template-areas: 
+                "menu menu"
+                "hero hero"
+                "contenido publicidad"
+                "contenido publicidad"
+                "footer footer";
+        }
+        #heroInicio {
+            height: 40vh;
+        }
+        .video {
+            margin-top: 5em;
+            margin-left: 3em;
+            margin-right: 3em;
+        }
+        .textoVideo {
+            padding-left: 2em;
+            padding-right: 2em;
+            padding-top: 3em;
+        }
+    /*CONTACTO*/
+        .Contacto {
+            background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5,7,12,0.75)),
+            url("../assets/imagenes/contacto.jpg");
+            height: 100%;
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+    /*QUIENES SOMOS*/
+        #quienesSomos {
+            height: 30em;
+        }
+        .presentacionFirst {
+            @include propiedades-qsomos (1em, 1em, 5em, center);
+        }
+        .presentacionSecond {
+            @include propiedades-qsomos (1em, 1em, 5em, center);
+        }
+        section div img {
+            height: 250px;
+        }
+    /*PODCAST*/
+    #podcast {
+        height: 5em;
+    }
+    .spoty{
+        contain: content;
+        p{
+            padding-left: 1em;
+        }
+    }
+    .botonSpotyApar{
+        width: 10em;
+        height: 3em;
+        margin-right: 3em;
+    } 
+    /*COLABORADORES*/
+    #colaboradores {
+        height: 40vh;
+    }
+    #imagenesFirst img{
+        margin:4em;
+    }
+    #imagenesSecond img{
+        margin:4em;
+    }
+    }

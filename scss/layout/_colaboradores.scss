@@ -1,0 +1,31 @@
+#colaboradores {
+    background-image: linear-gradient(rgba(5,7,12,0.6), rgba(5,7,12,0.6)),
+    url("../assets/imagenes/colaboradores.jpg");
+    @include propiedades-hero (90vh, flex, center, center, center, no-repeat, cover);
+}
+#fondoColaboradores {
+    background-color: whitesmoke;
+}
+main section div p {
+    font-family: $fuente-principal;
+    font-style: normal;
+    color:#272827;
+}
+#imagenesFirst{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    img{
+        text-align: center;
+        margin:3.5em;
+        margin-bottom: 20px;
+        margin-top: 10em;
+    }
+}
+#imagenesSecond{
+    @extend #imagenesFirst;
+}
+.imagenes:hover{
+    transform: scale(1, 1);
+}

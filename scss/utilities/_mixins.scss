@@ -1,0 +1,27 @@
+@mixin propiedades-hero ($height,$display,$aling,$justify,$text,$backgruond-repet, $background-size) {
+    height: $height;
+    display: $display;
+    align-items: $aling;
+    justify-content: $justify;
+    text-align: $text;
+    background-repeat: $backgruond-repet;
+    background-size: $background-size;
+}
+@mixin propiedades-qsomos ($padding-l, $padding-r, $padding-t, $aling){
+   padding-left: $padding-l;
+   padding-right: $padding-r;
+   padding-top: $padding-t;
+   text-align: $aling;
+}
+@mixin propiedades-qsomos-p ($fuente, $style, $color, $lineh){
+    font-family: $fuente;
+    font-style: $style;
+    color: $color;
+    line-height: $lineh;
+}
+
+@mixin margin ($top, $left, $right){
+    margin-top: $top;
+    margin-left: $left;
+    margin-right: $right;
+}

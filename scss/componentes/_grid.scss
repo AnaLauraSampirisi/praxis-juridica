@@ -1,0 +1,28 @@
+/*INDEX GRID*/
+.containerGrid {
+    display: grid;
+    grid-template-columns: repeat(2,2fr) 1fr;
+    grid-template-rows: 3em 35em 40em 20em 3em;
+    height: 100%;
+    grid-template-areas: 
+        "menu menu menu"
+        "hero hero hero"
+        "contenido contenido publicidad"
+        "contenido contenido publicidad"
+        "footer footer footer";
+}
+.headerGrid {
+    grid-area: menu;
+}
+.mainGrid {
+    grid-area: contenido;
+}
+.heroGrid {
+    grid-area: hero;
+}
+.asideGrid {
+    grid-area: publicidad;
+}
+.footerGrid {
+    grid-area: footer;
+}

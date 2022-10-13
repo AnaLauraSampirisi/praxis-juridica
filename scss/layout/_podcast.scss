@@ -1,0 +1,23 @@
+#podcast {
+    background-image: linear-gradient(rgba(5,7,12,0.6), rgba(5,7,12,0.6)),
+    url("../assets/imagenes/podcast.jpg");
+    @include propiedades-hero (90vh, flex, center, center, center, no-repeat, cover);
+}
+.podcastApar div iframe{
+    background: $background-principal;
+    padding: 2em;
+}
+.spoty{
+    display: flex;
+    background-color: #6597C8;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-family: $fuente-principal;
+        padding-right: 1em;
+        padding-top: 1em;
+    }
+}
+section #suscripcion div p svg form{
+    display: inline;
+}
