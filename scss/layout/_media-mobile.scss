@@ -1,9 +1,16 @@
 @media (max-width: 767px){
+    /*header*/
+    header{
+        height: 5em;
+        width: fit-content;
+        position: fixed;
+        z-index: 3;
+        }
     /*index*/
     .containerGrid {
         background-color:rgb(10, 6, 6);
         grid-template-columns: 1fr;
-        grid-template-rows: 3em 20em 60em 10em 1em;
+        grid-template-rows: 5em 20em 60em 10em 1em;
         grid-template-areas: 
         "menu"
         "hero"
@@ -35,6 +42,8 @@
         height: 100%;
         background-size: cover;
         background-attachment: fixed; 
+        margin-top: 3em;
+        padding-bottom: 2em;
     }
     footer {
         background-color: #C7CCC7;
@@ -43,6 +52,7 @@
     /*quienes somos*/
     #quienesSomos {
         height: 15em;
+        margin-top: 5em;
     }
     #flexConteiner {
         display: block;
@@ -59,6 +69,7 @@
 /*PODCAST*/
     #podcast {
         height: 3em;
+        margin-top: 1em;
     }
     .spoty{
         contain: content;
@@ -76,6 +87,7 @@
     #colaboradores {
         height: 30vh;
         font-size: 2.5em;
+        margin-top: 2em;
     }
     #imagenesFirst{
         display: inline-block;
