@@ -335,7 +335,6 @@ section #suscripcion div p svg form {
   /*header*/
   header {
     height: 5em;
-    width: fit-content;
     position: fixed;
     z-index: 3; }
   /*index*/
