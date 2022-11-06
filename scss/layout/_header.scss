@@ -1,6 +1,6 @@
 header{
     background-color: $background-second;
-    height: 55px;
+    height: 75px;
     display: flex;
     align-items: center;
     position: sticky;
@@ -18,4 +18,9 @@ header{
     &:hover{
         color: blue;
     }
+}
+
+.navbar-nav{
+    position: fixed;
+    background-color: $background-second;
 }

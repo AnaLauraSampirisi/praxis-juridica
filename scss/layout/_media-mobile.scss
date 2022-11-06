@@ -4,6 +4,8 @@
         height: 5em;
         position: fixed;
         z-index: 3;
+        width: 100%;
+        }
         }
     /*index*/
     .containerGrid {
@@ -34,6 +36,10 @@
         rotate: 90deg;
         background-size: cover;
     }
+    .footerGrid{
+        padding-left: 4em;
+        padding-right: 4em;
+    }
     /*contacto*/
     .Contacto {
         background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5,7,12,0.75)),
@@ -47,6 +53,7 @@
     footer {
         background-color: #C7CCC7;
         height: 170px;
+        padding-left: 3em;
     }
     /*quienes somos*/
     #quienesSomos {

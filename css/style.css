@@ -20,7 +20,7 @@ html {
 
 header {
   background-color: #C7CCC7;
-  height: 55px;
+  height: 75px;
   display: flex;
   align-items: center;
   position: sticky;
@@ -36,6 +36,10 @@ header {
   font-size: larger; }
   .nav-link:hover {
     color: blue; }
+
+.navbar-nav {
+  position: fixed;
+  background-color: #C7CCC7; }
 
 footer {
   background-color: #C7CCC7;
@@ -75,6 +79,9 @@ footer {
 
 #redes ul:hover a {
   filter: blur(2px); }
+
+.headerGrid {
+  box-sizing: border-box; }
 
 .fondoInicio {
   background-color: #0a0606;
@@ -311,6 +318,7 @@ section #suscripcion div p svg form {
 /*INDEX GRID*/
 .containerGrid {
   display: grid;
+  box-sizing: border-box;
   grid-template-columns: repeat(2, 2fr) 1fr;
   grid-template-rows: 3em 35em 40em 20em 3em;
   height: 100%;
@@ -336,7 +344,8 @@ section #suscripcion div p svg form {
   header {
     height: 5em;
     position: fixed;
-    z-index: 3; }
+    z-index: 3;
+    width: 100%; }
   /*index*/
   .containerGrid {
     background-color: #0a0606;
@@ -358,6 +367,9 @@ section #suscripcion div p svg form {
   .asideGrid img {
     rotate: 90deg;
     background-size: cover; }
+  .footerGrid {
+    padding-left: 4em;
+    padding-right: 4em; }
   /*contacto*/
   .Contacto {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../assets/imagenes/contacto.jpg");
@@ -368,7 +380,8 @@ section #suscripcion div p svg form {
     padding-bottom: 2em; }
   footer {
     background-color: #C7CCC7;
-    height: 170px; }
+    height: 170px;
+    padding-left: 3em; }
   /*quienes somos*/
   #quienesSomos {
     height: 15em;

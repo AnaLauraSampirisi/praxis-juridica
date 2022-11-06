@@ -1,6 +1,7 @@
 /*INDEX GRID*/
 .containerGrid {
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: repeat(2,2fr) 1fr;
     grid-template-rows: 3em 35em 40em 20em 3em;
     height: 100%;
