@@ -80,9 +80,6 @@ footer {
 #redes ul:hover a {
   filter: blur(2px); }
 
-.headerGrid {
-  box-sizing: border-box; }
-
 .fondoInicio {
   background-color: #0a0606;
   color: whitesmoke; }
@@ -345,87 +342,106 @@ section #suscripcion div p svg form {
     height: 5em;
     position: fixed;
     z-index: 3;
-    width: 100%; }
-  /*index*/
-  .containerGrid {
-    background-color: #0a0606;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5em 20em 60em 10em 1em;
-    grid-template-areas: "menu" "hero" "contenido" "publicidad" "footer"; }
-  #heroInicio {
-    height: 20em; }
-  .video {
-    margin-top: 3em;
-    margin-left: 1em;
-    margin-right: 1em; }
-  .textoVideo {
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 2em;
-    line-height: 1.5em;
-    padding-bottom: 3em; }
-  .asideGrid img {
-    rotate: 90deg;
-    background-size: cover; }
-  .footerGrid {
-    padding-left: 4em;
-    padding-right: 4em; }
-  /*contacto*/
-  .Contacto {
-    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../assets/imagenes/contacto.jpg");
-    height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: 3em;
-    padding-bottom: 2em; }
-  footer {
-    background-color: #C7CCC7;
-    height: 170px;
-    padding-left: 3em; }
-  /*quienes somos*/
-  #quienesSomos {
-    height: 15em;
-    margin-top: 5em; }
-  #flexConteiner {
-    display: block; }
-  .presentacionFirst {
+    width: 100%; } }
+
+/*index*/
+.containerGrid {
+  background-color: #0a0606;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5em 20em 60em 10em 1em;
+  grid-template-areas: "menu" "hero" "contenido" "publicidad" "footer"; }
+
+#heroInicio {
+  height: 20em; }
+
+.video {
+  margin-top: 3em;
+  margin-left: 1em;
+  margin-right: 1em; }
+
+.textoVideo {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  line-height: 1.5em;
+  padding-bottom: 3em; }
+
+.asideGrid img {
+  rotate: 90deg;
+  background-size: cover; }
+
+.footerGrid {
+  padding-left: 4em;
+  padding-right: 4em; }
+
+/*contacto*/
+.Contacto {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../assets/imagenes/contacto.jpg");
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 3em;
+  padding-bottom: 2em; }
+
+footer {
+  background-color: #C7CCC7;
+  height: 170px;
+  padding-left: 3em; }
+
+/*quienes somos*/
+#quienesSomos {
+  height: 15em;
+  margin-top: 5em; }
+
+#flexConteiner {
+  display: block; }
+
+.presentacionFirst {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 2em;
+  text-align: center; }
+
+.presentacionSecond {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 2em;
+  text-align: center; }
+
+section div img {
+  height: 250px; }
+
+/*PODCAST*/
+#podcast {
+  height: 3em;
+  margin-top: 1em; }
+
+.spoty {
+  contain: content; }
+  .spoty p {
     padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 2em;
-    text-align: center; }
-  .presentacionSecond {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 2em;
-    text-align: center; }
-  section div img {
-    height: 250px; }
-  /*PODCAST*/
-  #podcast {
-    height: 3em;
-    margin-top: 1em; }
-  .spoty {
-    contain: content; }
-    .spoty p {
-      padding-left: 1em;
-      padding-right: 0; }
-  .botonSpotyApar {
-    width: 10em;
-    height: 3em;
-    margin-right: 3em; }
-  /*COLABORADORES*/
-  #colaboradores {
-    height: 30vh;
-    font-size: 2.5em;
-    margin-top: 2em; }
-  #imagenesFirst, #imagenesSecond {
-    display: inline-block; }
-    #imagenesFirst img, #imagenesSecond img {
-      margin: 4em; }
-  #imagenesSecond {
-    display: inline-block; }
-    #imagenesSecond img {
-      margin: 4em; } }
+    padding-right: 0; }
+
+.botonSpotyApar {
+  width: 10em;
+  height: 3em;
+  margin-right: 3em; }
+
+/*COLABORADORES*/
+#colaboradores {
+  height: 30vh;
+  font-size: 2.5em;
+  margin-top: 2em; }
+
+#imagenesFirst, #imagenesSecond {
+  display: inline-block; }
+  #imagenesFirst img, #imagenesSecond img {
+    margin: 4em; }
+
+#imagenesSecond {
+  display: inline-block; }
+  #imagenesSecond img {
+    margin: 4em; }
 
 /*MEDIA QUERIES TABLET*/
 @media (min-width: 768px) and (max-width: 1119px) {
